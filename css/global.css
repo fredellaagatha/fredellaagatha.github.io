@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+}
+
+.main_container {
+  width:1000px;
+  margin-left:auto;
+  margin-right:auto;
+  
+}
+
+.card.wide {
+  margin-top:30px;
+  width:97%;
+  height:30%;
+}
+
+.card {
+  background-color: khaki;
+  float:left;
+  padding-left:3%;
+  padding-top:3%;
+}
+
+nav {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 120px;
+  z-index: 10;
+  background-color:gold;
+}
+
+nav main a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  margin-left:20px;
+}
+
+nav main a:hover {
+  text-decoration: underline;
+  color: yellow;
+}
+
+nav .selalukananatas {
+  width: 200px;
+  height: 100px;
+  background-image: url('../image/ide.png');
+  position: absolute;
+  background-size: contain;
+   background-repeat: no-repeat;
+  top: 10px;
+  right: 20px;
+  border-radius: 15px;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+section.full {
+  background-image: url('../image/bg.jpg');
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+section .left {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+
+section .right {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  float: left;
+}
+
+section .melayang {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  width: 40%;
+  height: 200px;
+  /*background-color: pink;*/
+
+
+main {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  width: 100%;
+  height: 58vh;
+}
+
+section .cardwide {
+  position: relative;
+  width: 60%;
+  height: 60%;
+}
+
+section .card {
+  position: relative;
+  width: 32%;
+  height: 70%;
+}
+
+
+/**/
+
+@media (max-width: 1024px) {
+  main {
+    width: 100vw;
+  }
+  
+  .main_container {
+  width:100vw;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+  .card {
+  width:100vw;
+  height:40vh;
+
+}
+ 
+  section .kiri, section .tengah, section .kanan {
+    width: 100vw;
+    height: 30vh;
+    margin-top:10px;
+  }
+  
+  section .melayang {
+    top: 80%;
+    left: 10%;
+    width: 90%;
+  }
+      
+  nav {
+    height:80px;
+  }
+}
